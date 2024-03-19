@@ -1,4 +1,4 @@
-let answers = ['The heaven says yes', 'Not likely', 'hell nah', 'hell yeah', 'Im not sure', 'not likely', 'you wish', 'unlucky', 'Its written in the stars', 'Go for it!', 'Sounds exciting'];
+let answers = ['The heavens says yes', 'Not likely', 'hell nah', 'hell yeah', 'Im not sure', 'not likely', 'you wish', 'unlucky', 'Its written in the stars', 'Go for it!', 'Sounds exciting'];
 let answer = '8';
 let classFont = 'font';
 
@@ -7,7 +7,7 @@ function updateView(){
     let html = '';
     html += /*html*/` 
     <div class="baller">
-        <button class="whiteCircle" onclick="answerMe()">
+        <button id="eightBTN" class="whiteCircle" onclick="answerMe()" disabled="disabled">
             <div class="${classFont}">${answer}</div>
         </button>
     </div>
@@ -22,4 +22,3 @@ function answerMe(){
     answers.splice(randomIndex, 1);
     updateView();
 }
-
